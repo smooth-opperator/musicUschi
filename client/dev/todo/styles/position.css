@@ -5,6 +5,14 @@
   padding: 0 25px 25px;
 }
 
+.about-panel {
+  width: 50%;
+  max-width: 600px;
+  /*margin: 30px auto;*/
+  margin-right:20px;
+  padding: 25px 25px;
+}
+
 .todos-container .form-control {
   font-size: 17px;
   border-radius: 0;

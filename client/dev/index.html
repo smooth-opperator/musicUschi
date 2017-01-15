@@ -1,15 +1,15 @@
 <!doctype html>
 <html ng-app="musicUschi">
   <head>
-    
+
     <base href="/"/>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="description" content="My awesome application">
     <meta name="keywords" content="Todo,myAwesomeApp,App">
     <meta name="author" content="Author">
 
-    
+
 
     <title>todo :D</title>
     <link rel="shortcut icon" type="image/ico" href="./favicon.png"/>
@@ -25,27 +25,27 @@
     <link type="text/css" rel="stylesheet" href="./todo/styles/events.css?rev=@@hash"/>
   </head>
 
-  <body>
+  <body id="background" style="background-size: 100vw;">
     <div ng-view></div>
     <script>
-      (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-          (i[r].q = i[r].q || []).push(arguments)
-        },
-        i[r].l = 1 * new Date();
-        a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    //   (function(i, s, o, g, r, a, m) {
+    //     i['GoogleAnalyticsObject'] = r;
+    //     i[r] = i[r] || function() {
+    //       (i[r].q = i[r].q || []).push(arguments)
+    //     },
+    //     i[r].l = 1 * new Date();
+    //     a = s.createElement(o),
+    //     m = s.getElementsByTagName(o)[0];
+    //     a.async = 1;
+    //     a.src = g;
+    //     m.parentNode.insertBefore(a, m)
+    //   })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-XXXXX-X', 'auto');
-      ga('send', 'pageview');
-    </script>
+    //   ga('create', 'UA-XXXXX-X', 'auto');
+    //   ga('send', 'pageview');
+    // </script>
 
-    
+
 
     <script type="text/javascript" src="./bower_components/jquery/dist/jquery.js?rev=@@hash"></script>
     <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.js?rev=@@hash"></script>
@@ -61,6 +61,15 @@
     <script type="text/javascript" src="./todo/models/todo-model.js?rev=@@hash"></script>
     <script type="text/javascript" src="./todo/services/todo-dao.js?rev=@@hash"></script>
     <script type="text/javascript" src="./todo/services/todo-resource.js?rev=@@hash"></script>
+    <script type="text/javascript" src="./components/navbar/NavbarController.js?rev=@@hash"></script>
     <script type="text/javascript" src="./todo/controllers/todo-controller.js?rev=@@hash"></script>
+    <script type="text/javascript" src="./todo/controllers/home-controller.js?rev=@@hash"></script>
+    <script type="text/javascript" src="./routes/aboutRoute/AboutRouteController.js?rev=@@hash"></script>
+    <script type="text/javascript" src="./routes/newsRoute/NewsRouteController.js?rev=@@hash"></script>
+    <script type="text/javascript" src="./routes/listenRoute/ListenRouteController.js?rev=@@hash"></script>
+
+
+    <script type="text/javascript" src="./components/navbar/navbarDirective.js?rev=@@hash"></script>
+
   </body>
 </html>

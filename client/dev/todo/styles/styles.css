@@ -4,6 +4,13 @@
   background-color: #fff;
 }
 
+.about-panel {
+  /*border: 1px solid #ddd;*/
+  box-shadow: 1px 1px 1px rgba(72, 176, 72, 0.49);
+  background-color: #fff;
+  opacity:0.8;
+}
+
 .todos-container .form-control {
   font-size: 17px;
   border-radius: 0;
